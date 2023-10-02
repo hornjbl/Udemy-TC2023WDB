@@ -62,14 +62,41 @@ body {
     width: 100%;
 }
 
-h1 {
+h1,
+h2 {
     text-align: center;
     text-transform: uppercase;
     padding: 30px 0;
 }
 
+h3,
+h4 {
+    margin-bottom: 20px;
+}
+
 p {
     margin-bottom: 20px;
+}
+
+code {
+    background-color: lightgray;
+    border: 0.5px dotted black;
+    padding: 1px 2px;
+}
+
+nav li {
+    list-style: none;
+}
+
+article {
+    margin: 30px;
+}
+
+footer {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .nav-category {
@@ -78,17 +105,6 @@ p {
 
 .nav-category ul {
     padding: 0 10px;
-}
-
-nav li {
-    list-style: none;
-}
-
-footer {
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 0;
 }
 
 .main {
