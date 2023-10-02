@@ -1,0 +1,105 @@
+/* ====================================================================== */
+/* STANDARD CSS RESET START */
+/* ====================================================================== */
+*,
+*::before,
+*::after {
+    /* 1. Use a more-intuitive box-sizing model */
+    box-sizing: border-box;
+}
+* {
+    /* 2. Remove default margin */
+    margin: 0;
+}
+/* Typographic tweaks! */
+body {
+    /* 3. Add accessible line-height */
+    /* 4. Improve text rendering */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    /* 6. Remove built-in form typography styles */
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 7. Avoid text overflows */
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    /* 8. Create a root stacking context */
+    isolation: isolate;
+}
+/* ====================================================================== */
+/* STANDARD CSS RESET END */
+/* ====================================================================== */
+
+* {
+    font-family: sans-serif;
+    font-size: 0, 5rem;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.nav-category {
+    padding: 0;
+}
+
+.nav-category ul {
+    padding: 0 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+footer {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main {
+    border: 5px solid red;
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    content: "";
+    border: 5px solid green;
+    flex: 0 0 60%;
+}
