@@ -2,6 +2,11 @@
 
 The Complete 2023 Web Development Bootcamp (Udemy Course)
 
+## Index
+
+-   [NB Notes](#nb-notes)
+    -   [Section 6](#section-6)
+
 ## NB Notes:
 
 ### Section 6
