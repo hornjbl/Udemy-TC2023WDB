@@ -120,3 +120,7 @@ footer {
 .content {
     flex: 0 0 60%;
 }
+
+.div-article-section {
+    margin-bottom: 30px;
+}
