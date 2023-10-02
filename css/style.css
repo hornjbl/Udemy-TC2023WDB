@@ -84,6 +84,10 @@ code {
     padding: 1px 2px;
 }
 
+nav {
+    margin-left: 20px;
+}
+
 nav li {
     list-style: none;
 }
@@ -108,14 +112,11 @@ footer {
 }
 
 .main {
-    border: 5px solid red;
     display: flex;
     max-width: 80%;
     margin: 0 auto;
 }
 
 .content {
-    content: "";
-    border: 5px solid green;
     flex: 0 0 60%;
 }
