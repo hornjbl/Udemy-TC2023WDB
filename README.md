@@ -4,7 +4,9 @@ The Complete 2023 Web Development Bootcamp (Udemy Course)
 
 -   [NB Notes](#nb-notes)
     -   [Section 6](#section-6)
-    -   [Section 7](#section-7)
+    -   [Section 7 - Intermediate CSS](#section-7)
+    -   [Section 8 - Advanced CSS](#section-8)
+    -   [Section 9 - Flexbox](#section-9)
 
 ## NB Notes:
 
@@ -110,3 +112,19 @@ Advanced CSS
     -   Ex @media (max-wdith: 600px) { ... }
 -   Web Design Agency Website (Project)
 -   Tip from Angela - How to Deal with Procrastination
+
+### Section 9
+
+Flexbox
+
+-   Display: Flex
+    -   Do not use floats for layout. Use floats for things like making text wrap around an image, etc.
+    -   Do not use tables for layouts. Use tables for displaying actual tables on your page.
+    -   Set by using the display: flex; property.
+    -   This causes the container set to be flexbox to take up 100% of the width of the parent element.
+    -   You can also use the display: inline-flex; property, so the flex container will still display on the same line as other inline elements.
+-   Flex Direction
+-   Flex Layout
+-   Flex Sizing
+-   Pricing Table (Project)
+-   Tip from Angela - Building a Programming Habit
