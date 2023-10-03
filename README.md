@@ -31,6 +31,25 @@ Intermediate CSS
             -   inline (h1 style="...">content</h1>)
         -   Importance (color: green !important;)
 -   Combining CSS Selectors
+    -   Descendant combination (selector selector {})
+        -   NB: Applies to ALL the descendent selectors regardless of position or level.
+        -   Ex:
+            -   div p {}
+            -   .class-name p {}
+            -   #id-name p {}
+    -   Group of selectors (selector, selector {})
+    -   Child selectors (selector > selector {})
+        -   NB: This only goes one generation deep!
+        -   NB: This only applies to a DIRECT child!
+    -   Chaining selectors (selectorselector {})
+        -   Applies to elements where all the selector requirements are met.
+        -   Ex: element#id-name.class-name1.class-name2
+        -   NB: Always start with element selectors first, and then ids and classes.
 -   CSS Positioning
+    -   4 Different values for position:
+        -   Static
+        -   Relative
+        -   Absolute
+        -   Fixed
 -   CSS Flag (Project)
 -   Tips from Angela - Nothing Easy is Worth Doing!
