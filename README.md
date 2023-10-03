@@ -64,3 +64,48 @@ Intermediate CSS
 -   CSS Flag (Project)
 -   Tips from Angela - Nothing Easy is Worth Doing!
     -   NB: You have to put in the hours/work/effort, and then you'll get the results!
+
+### Section 8
+
+Advanced CSS
+
+-   CSS Display
+    -   Display can be inline, block, inline-block, or none.
+    -   Block elements
+        -   Take up the full width of their parent element.
+        -   Force subsequent elements to display below them.
+        -   Width and height can be set.
+    -   Inline elements
+        -   Take up only as much space as the content they contain.
+        -   Subsequent elements are displayed in the same line as they are, if the container element has enough space.
+        -   Width and height cannot be set.
+    -   Inline-Block
+        -   Width and height can be set.
+        -   Elements displayed on the same line.
+    -   None - element is not displayed at all.
+-   CSS Float
+    -   Wraps text around another element.
+    -   Essentially takes the element out of the flow of the rest of the elements.
+    -   Ex:
+        -   float: right;
+        -   float: left;
+    -   Clear property clears any responsibility to wrap around floating elements.
+        -   clear: right;
+        -   clear: left;
+        -   clear: both;
+-   How to Create Responsive Websites
+    -   4 Main ways to create responsive sites:
+        -   Media Queries
+            -   Inserted INSTEAD OF a selector in CSS.
+            -   Ex: @media (max-width: 600px) {...}
+        -   CSS Grid
+            -   Good for 2D layouts (columns X rows).
+        -   CSS Flexbox
+            -   Good for 1D layouts (rows).
+        -   External Frameworks like Bootstrap
+            -   Not built into CSS, like grid or flexbox, but is instead external.
+            -   Bootstrap is built on top of flexbox.
+            -   Provides a specific pre-built framework that can be used to lay out the website and keep it responsive.
+-   Media Queries
+-   Web Design Agency Website (Project)
+-   Tip from Angela - How to Deal with Procrastination
