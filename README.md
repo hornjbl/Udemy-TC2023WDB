@@ -124,7 +124,14 @@ Flexbox
     -   This causes the container set to be flexbox to take up 100% of the width of the parent element.
     -   You can also use the display: inline-flex; property, so the flex container will still display on the same line as other inline elements.
 -   Flex Direction
-    -
+    -   Default HTML flow is row-based from left to right, then down to the next row, etc.
+    -   When a container element is turned into a flexbox container, all its children elements are put on the same row, regardless of their default display type.
+    -   The flex-direction property can be set to row or column to determine what direction the flow goes. This sets what is called the "main axis".
+    -   There is also a cross-axis which is perpendicular to the main axis.
+    -   Common/important properties:
+        -   flex-basis: 100px;
+            -   Sets the size that the items should flex in the direction of the main axis.
+            -   This sets the height of the flex-children when the flex-direction is column, and the width of the flex-children when the flex-direction is row.
 -   Flex Layout
 -   Flex Sizing
 -   Pricing Table (Project)
