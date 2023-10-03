@@ -109,5 +109,4 @@ Advanced CSS
 -   Media Queries
     -   Ex @media (max-wdith: 600px) { ... }
 -   Web Design Agency Website (Project)
-    -
 -   Tip from Angela - How to Deal with Procrastination
