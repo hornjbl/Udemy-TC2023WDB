@@ -10,16 +10,20 @@
 		https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators -->
         <style>
             .container {
+                /* Notice that by default, the flex items vertically fill their parent container */
+                height: 80vh;
                 color: white;
                 border: 5px solid gold;
-                display: inline-flex;
-                flex-direction: column;
-            }
-
-            /* Select all the elements that are the direct */
-            /* children of the .container class. */
-            .container > div {
-                flex-basis: 100px;
+                /* Play around with the various flex-related values of the display property */
+                display: flex;
+                /* Experiment with the flex-direction property values (default: row) */
+                /* flex-direction: row; */
+                /* Expirment with the justify-content property values (default: flex-start) */
+                /* justify-content: flex-start; */
+                /* Expirment with the align-items property values (default: flex-start) */
+                align-items: flex-start;
+                /* flex-grow: 0; */
+                /* flex-shrink: 0; */
             }
 
             .red {

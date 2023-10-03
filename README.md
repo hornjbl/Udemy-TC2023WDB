@@ -133,6 +133,19 @@ Flexbox
             -   Sets the size that the items should flex in the direction of the main axis.
             -   This sets the height of the flex-children when the flex-direction is column, and the width of the flex-children when the flex-direction is row.
 -   Flex Layout
+    -   Learn which properties go with the parent element and which goes with the child elements.
+    -   Default flex-wrap value is nowrap.
+    -   Play Flexbox Froggy, but on intermediate difficulty.
 -   Flex Sizing
+    -   Sizing order of priority:
+        -   content width < width < flex-basis < min-width/max-width
+        -   min-width is automatically set to the lenth of the longest word in the content.
+        -   max-width is automatically set to the legth of the entirety of the content.
+    -   Growing and shrinking is an NB part of flexbox to understand. This is what makes flexbox flexible.
+    -   flex: 1 1 0; (grow shrink basis) -> this is the shorthand for the following:
+        -   flex-basis: 0;
+        -   flex-grow: 1;
+        -   flex-shrink: 1;
+        -   This can be shortened even further to flex: 1; which translates to flex: 1 1 0;
 -   Pricing Table (Project)
 -   Tip from Angela - Building a Programming Habit
