@@ -107,5 +107,7 @@ Advanced CSS
             -   Bootstrap is built on top of flexbox.
             -   Provides a specific pre-built framework that can be used to lay out the website and keep it responsive.
 -   Media Queries
+    -   Ex @media (max-wdith: 600px) { ... }
 -   Web Design Agency Website (Project)
+    -
 -   Tip from Angela - How to Deal with Procrastination
