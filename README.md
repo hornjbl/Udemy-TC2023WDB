@@ -47,9 +47,19 @@ Intermediate CSS
         -   NB: Always start with element selectors first, and then ids and classes.
 -   CSS Positioning
     -   4 Different values for position:
-        -   Static
+        -   Static (Default)
+            -   Each element flows in the HTML document as they normally would.
         -   Relative
+            -   Item is positioned relative to its default (static) position.
         -   Absolute
+            -   Item is positioned relative to its nearest positioned ancestor (the ancestor has its position property set), otherwise relative to the top left corner of webpage.
         -   Fixed
+            -   Relative to the top-left corner of the browser window.
+            -   This stays in the same position when you scroll the website.
+    -   Z-Index (goes into 3rd dimension)
+        -   Goes into 3rd dimension
+        -   Determines what is displayed on top and what is at the bottom.
+    -   NOTES:
+        -   Giving a square container a 50% border radius value makes a perfect circle.
 -   CSS Flag (Project)
 -   Tips from Angela - Nothing Easy is Worth Doing!
