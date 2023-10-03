@@ -124,6 +124,7 @@ Flexbox
     -   This causes the container set to be flexbox to take up 100% of the width of the parent element.
     -   You can also use the display: inline-flex; property, so the flex container will still display on the same line as other inline elements.
 -   Flex Direction
+    -
 -   Flex Layout
 -   Flex Sizing
 -   Pricing Table (Project)
