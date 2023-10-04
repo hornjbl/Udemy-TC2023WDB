@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+			name="description"
+			content="Website description"
+			name="keywords"
+			content="keywords, for, website" />
+		<title>Website title</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<style>
+			body {
+				background-color: green;
+				display: flex;
+				justify-content: center;
+				/* in order for align-items: center to have any effect,
+				it seems an explicit height needs to be set for the container element */
+				align-items: center;
+				height: 100vh;
+			}
+
+			.container {
+				background-color: cyan;
+				width: 300px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Hello</h1>
+			<p>content</p>
+			<button>Text</button>
+		</div>
+	</body>
+</html

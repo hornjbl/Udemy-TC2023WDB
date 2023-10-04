@@ -1,0 +1,155 @@
+/* ====================================================================== */
+/* STANDARD CSS RESET START */
+/* ====================================================================== */
+*,
+*::before,
+*::after {
+    /* 1. Use a more-intuitive box-sizing model */
+    box-sizing: border-box;
+}
+* {
+    /* 2. Remove default margin */
+    margin: 0;
+}
+/* Typographic tweaks! */
+body {
+    /* 3. Add accessible line-height */
+    /* 4. Improve text rendering */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    /* 6. Remove built-in form typography styles */
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 7. Avoid text overflows */
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    /* 8. Create a root stacking context */
+    isolation: isolate;
+}
+/* ====================================================================== */
+/* STANDARD CSS RESET END */
+/* ====================================================================== */
+
+:root {
+    /* COLORS */
+    --color-pricing-box: #f0f0f0;
+
+    --color-button-background: #ff6600;
+    --color-button-font: #f0f0f0;
+
+    /* FONTS */
+    --font-family: "Sono", sans-serif;
+
+    --font-size: 1.3rem;
+    --font-size-button: 0.8rem;
+    --font-size-price: 3.5rem;
+    --font-size-plan-title: 1.7rem;
+
+    --font-weight-price: 900;
+    --font-weigth-plan-title: 800;
+
+    /* BORDERS */
+    --border-radius-button: 4px;
+    --border-radius-price-plan: 5px;
+}
+
+body {
+    /* ! Remove */
+    /* background-color: green; */
+    font-family: var(--font-family);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-container {
+    /* ! Remove */
+    /* background-color: cyan; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.pricing-plan {
+    /* ! Remove */
+    background-color: var(--color-pricing-box);
+    font-size: var(--font-size);
+    text-align: center;
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-price-plan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+    width: 500px;
+    /* min-width: 450px; */
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    margin-bottom: 10px;
+}
+
+.plan-title {
+    font-size: var(--font-size-plan-title);
+    font-weight: var(--font-weigth-plan-title);
+}
+
+.plan-price {
+    font-size: var(--font-size-price);
+    font-weight: var(--font-weight-price);
+}
+
+.plan-button {
+    border: none;
+    border-radius: var(--border-radius-button);
+    background-color: var(--color-button-background);
+    font-size: 1em;
+    color: var(--color-button-font);
+    padding: 10px 20px;
+}
+
+@media (min-width: 1550px) {
+    .pricing-container {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        width: 500px;
+    }
+}
