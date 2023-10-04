@@ -16,29 +16,31 @@
 		<style>
 			body {
 				background-color: green;
-				display: flex;
-				justify-content: center;
-				/* in order for align-items: center to have any effect,
-				it seems an explicit height needs to be set for the container element */
-				align-items: center;
-				height: 100vh;
+
 			}
 
 			.container {
 				background-color: cyan;
-				width: 300px;
 				display: flex;
 				flex-direction: column;
+				justify-content: center;
 				align-items: center;
+			}
+
+			.elements {
+				background-color: lightsalmon;
+				max-width: 400px;
+				width: 400px;
 			}
 		</style>
 	</head>
 
 	<body>
 		<div class="container">
-			<h1>Hello</h1>
-			<p>content</p>
-			<button>Text</button>
+			<div class="elements">This</div>
+			<div class="elements">is</div>
+			<div class="elements">some</div>
+			<div class="elements">verylongtext</div>
 		</div>
 	</body>
 </html

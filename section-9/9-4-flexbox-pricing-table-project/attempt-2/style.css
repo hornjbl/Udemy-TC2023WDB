@@ -1,0 +1,159 @@
+/* ====================================================================== */
+/* STANDARD CSS RESET START */
+/* ====================================================================== */
+*,
+*::before,
+*::after {
+    /* 1. Use a more-intuitive box-sizing model */
+    box-sizing: border-box;
+}
+* {
+    /* 2. Remove default margin */
+    margin: 0;
+}
+/* Typographic tweaks! */
+body {
+    /* 3. Add accessible line-height */
+    /* 4. Improve text rendering */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    /* 6. Remove built-in form typography styles */
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 7. Avoid text overflows */
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    /* 8. Create a root stacking context */
+    isolation: isolate;
+}
+/* ====================================================================== */
+/* STANDARD CSS RESET END */
+/* ====================================================================== */
+
+:root {
+    /* COLORS */
+    --color-pricing-box: #f0f0f0;
+
+    --color-button-background: #ff6600;
+    --color-button-font: #f0f0f0;
+
+    /* FONTS */
+    --font-family: "Sono", sans-serif;
+
+    --font-size: 1.3rem;
+    --font-size-button: 0.8rem;
+    --font-size-price: 3.5rem;
+    --font-size-plan-title: 1.7rem;
+
+    --font-weight-price: 900;
+    --font-weigth-plan-title: 800;
+
+    /* BORDERS */
+    --border-radius-button: 4px;
+    --border-radius-price-plan: 5px;
+}
+
+.pricing-container {
+    /* TODO */
+    /* background-color: lightcoral; */
+
+    display: flex;
+    /* ! Looks like it's not necessary to set the width. */
+    /* ! I think a display: flex item automatically takes up the full width */
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    font-family: var(--font-family);
+}
+
+.pricing-plan {
+    /* TODO */
+    background-color: var(--color-pricing-box);
+
+    /* ! flex: 1 makes each child element equal in width */
+    /* ? What happens to this when the flex-direction changes? */
+    flex: 1;
+
+    /* ! So she is first setting flex:1 and then also a max-width */
+    /* ! This makes it so that it does shrink and grow, but only grow to a maximum of 400px */
+    /* ! At this point, the box heights can still vary depending on the shrink factor */
+    max-width: 400px;
+
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li {
+    margin-bottom: 20px;
+}
+
+.plan-button {
+    padding: 10px;
+    background-color: var(--color-button-background);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (max-width: 1250px) {
+    .pricing-container {
+        flex-direction: column;
+        /* ! In the normal layout, the height is set to 100vh */
+        /* ! When the display size becomes smaller, Angela recommends setting this to 100% instead */
+        /* ! If this is not doen, the top of the screen is cut off like I saw in my first attempt */
+        /* ? Why does this happen? */
+        height: 100%;
+    }
+
+    .plan-price {
+        /* ! Angela's code does not take into account a columnar display where the max content is not equally wide */
+        /* ! This causes the boxes to have different widths in the column direction */
+        /* ! I'm not sure if this is the best/only solution, but it's the best I could come up with at the moment. */
+        width: 400px;
+    }
+}
