@@ -183,4 +183,12 @@ Grid
         -   Ex: grid-auto-rows: 300px;
     -   Use Chrome Developer Tools -> grid line numbering to debug grid layout issues.
 -   Grid Placement
+    -   Container is usually a DIV.
+    -   The grid columns and rows are collectively known as "tracks".
+    -   The tracks are usually sized with grid-template-rows and grid-template-columns (or grid-template).
+    -   In between the grid rows and columns are what is called "grid cells".
+    -   "Grid lines" separate the grid cells from each other.
+    -   You can size the grid-lines by using the gap property.
+    -   You can use multiple cells to create a "grid item".
+        -   Ex:
 -   Mondrian Painting (Project)
