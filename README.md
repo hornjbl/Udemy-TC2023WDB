@@ -191,4 +191,10 @@ Grid
     -   You can size the grid-lines by using the gap property.
     -   You can use multiple cells to create a "grid item".
         -   Ex: grid-column: span 2;
+        -   You can use grid-column-start: 1 and -1 to specify the first and last column to use.
+        -   The grid-column/row property is short for two other properties: grid-column/row-start and grid-column/row-end.
+        -   You can use the order property (default value of 0) to change the order in which the items are rendered.
+        -   The property grid-area: 2 / 1 / 3 / 3 can also be used.
+            -   This is row start / col start / row end / col end;
+            -   If you use grid-area on one grid item, you should use it an all the rest of the grid items as well.
 -   Mondrian Painting (Project)
