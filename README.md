@@ -190,5 +190,5 @@ Grid
     -   "Grid lines" separate the grid cells from each other.
     -   You can size the grid-lines by using the gap property.
     -   You can use multiple cells to create a "grid item".
-        -   Ex:
+        -   Ex: grid-column: span 2;
 -   Mondrian Painting (Project)
