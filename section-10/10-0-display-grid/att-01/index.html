@@ -17,16 +17,20 @@
                 /* ! ...thus adding gaps on the horizontal axis. */
                 /* ! Setting the container to the specific width that you plan on using */
                 /* ! ...prevents this. */
-                width: 800px;
+                /* width: 800px; */
+                height: 900px;
                 display: grid;
-                grid-template-columns: repeat(8, 1fr);
-                grid-template-rows: repeat(8, 1fr);
+                /* grid-template: repeat(8, 1fr) / repeat(8, 1fr); */
+                /* grid-template-columns: repeat(8, 1fr); */
+                /* grid-template-rows: repeat(8, 1fr); */
+                grid-template-columns: 100px 100px 100px 100px 100px 100px 100px auto;
+                grid-template-rows: 100px 100px 100px 100px 100px 100px 100px auto;
             }
 
             .white,
             .black {
-                height: 100px;
-                width: 100px;
+                /* height: 100px; */
+                /* width: 100px; */
             }
 
             .white {

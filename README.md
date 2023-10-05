@@ -160,5 +160,27 @@ Grid
         -   Use grid when you want to lay out content along a two-dimensional grid.
         -   Often developers use a combination of these layout tools (floats, flexbox, grid, bootstrap).
 -   Grid Sizing
+    -   This is an NB consideration - how to size the columns and rows to conform to the design.
+    -   Fixed-size grids (ex grid-template-columns: 200px 400px) are not responsive.
+    -   You can use rem units instead of pixels, but this is still fixed and not responsive (rem is relative to :root sizing).
+    -   grid-template-columns and grid-template-rows can be combined into one property: grid-template: rows / columns;
+        -   Ex: grid-template: 100px 200px / 400px 800px;
+        -   Tip from Angela: while learning, be explicit instead of using shortcut properties.
+        -   Tip from me: when being explicit, add the short-hand property in comments above the explicit property statements. Comment out alternatining to test if both (short-hand vs explicit) does the same.
+    -   Another sizing unit that can be used is the "auto" keyword.
+        -   Ex: grid-template-columns: 100px auto;
+        -   This causes the 'auto' sized element to try to fit the available space in its container element.
+        -   Note: grid-template-rows: auto; does not try to take 100% of the screen height, unless the container's height is set explicitly. Instead, it will just try to fit the height of its contents.
+    -   Another unit of measurement you can use is the fractional unit (fr).
+        -   Ex: grid-template-columns: 1fr 2fr; (This would create a 1:2 ratio between the two defined columns).
+        -   Fractional units will always try and maintain the ratio. If you add content to one element, making it bigger, any other element that has a ratio in relation to it will also try to change.
+    -   You can use the minmax() function to control the responsiveness of the layout.
+        -   Ex: grid-template-columns: 200px minmax(400px, 800px);
+        -   This allows the size of the element to grow or shrink up to or down to a max or min value, but still be responsive inside the min/max range.
+    -   You can use the repeat() function instead of manually specifying the amount of columns/rows to define.
+        -   Ex: grid-template-columns: repeat(8, 1fr);
+    -   You can use grid-auto-rows and grid-auto-columns to define what overflow items (implicit rows/columns) will look like.
+        -   Ex: grid-auto-rows: 300px;
+    -   Use Chrome Developer Tools -> grid line numbering to debug grid layout issues.
 -   Grid Placement
 -   Mondrian Painting (Project)
