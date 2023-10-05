@@ -149,3 +149,16 @@ Flexbox
         -   This can be shortened even further to flex: 1; which translates to flex: 1 1 0;
 -   Pricing Table (Project)
 -   Tip from Angela - Building a Programming Habit
+
+### Section 10
+
+Grid
+
+-   Display: Grid
+    -   Flexbox VS Grid
+        -   Use flexbox when you want to align items along a one-dimensional line.
+        -   Use grid when you want to lay out content along a two-dimensional grid.
+        -   Often developers use a combination of these layout tools (floats, flexbox, grid, bootstrap).
+-   Grid Sizing
+-   Grid Placement
+-   Mondrian Painting (Project)
