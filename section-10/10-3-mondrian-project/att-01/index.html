@@ -7,23 +7,135 @@
             content="width=device-width, initial-scale=1.0" />
         <title>Mondrian Project</title>
         <style>
-            /* 
-			Write your CSS here 
-			Gap Colour: #000
-			White: #F0F1EC
-			Red: #E72F24
-			Black: #232629
-			Blue: #004592
-			Yellow: #F9D01E
+            /*
+            For dimensions, see dimensions.png image.
+            HINT: Remember you can't change the properties of grid lines.
+            But grid lines are transparent!
+            */
 
-			For dimensions, see dimensions.png image.
-			HINT: Remember you can't change the properties of grid lines.
-			But grid lines are transparent!
-			*/
+            :root {
+                --color-gap: #000;
+                --color-white: #f0f1ec;
+                --color-red: #e72f24;
+                --color-black: #232629;
+                --color-blue: #004592;
+                --color-yellow: #f9d01e;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            main {
+                /* 
+					Commenting out the main container size settings, 
+					setting the sizes of the block inside automatically makes  
+					the container the right size.
+				*/
+                /* width: 748px; */
+                /* height: 748px; */
+                background-color: var(--color-gap);
+                display: grid;
+                /* 
+					I had to go and calculate the actual column and row sizes based on 
+					the information that was given. 
+				*/
+                grid-template-columns: 320px 360px 50px;
+                grid-template-rows: 414px 296px 20px;
+                gap: 9px;
+            }
+
+            .block {
+                background-color: var(--color-white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+            }
+
+            .red {
+                background-color: var(--color-red);
+            }
+
+            .white-1 {
+                grid-column: span 2;
+            }
+
+            .white-4 {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            .yellow-black {
+                grid-column: 2;
+                grid-row: 3;
+            }
+
+            .blue-white {
+                background-color: var(--color-gap);
+                grid-column: 3;
+                grid-row: span 2;
+                display: flex;
+                gap: 9px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
+            }
+
+            .blue-white .blue {
+                background-color: var(--color-blue);
+                flex-basis: 130px;
+                border-bottom: 10px solid var(--color-gap);
+            }
+
+            .blue-white .white {
+                flex-grow: 1;
+            }
+
+            .yellow-black {
+                background-color: var(--color-gap);
+                display: flex;
+                gap: 9px;
+                align-items: stretch;
+            }
+
+            .yellow-black .yellow {
+                background-color: var(--color-yellow);
+                flex-grow: 1;
+                flex-basis: 198px;
+            }
+
+            .yellow-black .black {
+                background-color: var(--color-black);
+                flex-grow: 1;
+                flex-basis: 153px;
+            }
         </style>
     </head>
 
     <body>
-        <!-- Write your HTML here -->
+        <main>
+            <div class="block red"></div>
+            <div class="block white-1"></div>
+            <div class="block white-2"></div>
+            <div class="block white-3"></div>
+            <div class="block white-4"></div>
+            <div class="block yellow-black">
+                <div class="block yellow"></div>
+                <div class="block black"></div>
+            </div>
+            <div class="block blue-white">
+                <div class="block blue"></div>
+                <div class="block white"></div>
+            </div>
+        </main>
     </body>
 </html>
