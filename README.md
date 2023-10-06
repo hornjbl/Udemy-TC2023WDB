@@ -198,3 +198,39 @@ Grid
             -   This is row start / col start / row end / col end;
             -   If you use grid-area on one grid item, you should use it an all the rest of the grid items as well.
 -   Mondrian Painting (Project)
+
+### Section 11
+
+Bootstrap - TODO
+
+### Section 12
+
+Web Design School - Create a Website That People Will Love - TODO
+
+### Section 13
+
+Capstone Project 2 - Personal Side - TODO
+
+### Section 14
+
+Introduction to Javascript ES6
+
+-   Download the Course Resources PDF
+-   Introduction to Javascript
+-   Javascript Alerts - Adding Behavior to Websites
+    -   Using Developer Tools -> Console to run Javascript code directly in browser.
+    -   Using Developer Tools -> Sources -> Snippets to run Javascript code directly in browser.
+    -   Reference [idomatic.js](https://github.com/rwaldron/idiomatic.js/) for a conformed javascript style guide.
+    -   Reference the [MDN Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) for Javascript documentation
+-                 Datatypes
+    -   Types of data:
+        -   string
+        -   number
+        -   boolean
+    -   typeof() function gives you the type of data that is passed to it.
+-   Javascript Variables
+    -   Declared with var, let, or const.
+        -   var variables are available throughout the function they are declared in.
+        -   let variables are available only inside the block where they are declared in.
+        -   const varaibles cannot be assigned new values.
+    -   var myVariable = "Value";
