@@ -222,7 +222,7 @@ Introduction to Javascript ES6
     -   Using Developer Tools -> Sources -> Snippets to run Javascript code directly in browser.
     -   Reference [idomatic.js](https://github.com/rwaldron/idiomatic.js/) for a conformed javascript style guide.
     -   Reference the [MDN Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) for Javascript documentation
--                 Datatypes
+-                       Datatypes
     -   Types of data:
         -   string
         -   number
@@ -234,3 +234,7 @@ Introduction to Javascript ES6
         -   let variables are available only inside the block where they are declared in.
         -   const varaibles cannot be assigned new values.
     -   var myVariable = "Value";
+-   Naming and Naming Conventions for Javascript Variables
+    -   Use camelCase for naming variables, ex: var myName;
+-   Strong Concatenation
+    -
