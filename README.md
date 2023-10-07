@@ -222,7 +222,7 @@ Introduction to Javascript ES6
     -   Using Developer Tools -> Sources -> Snippets to run Javascript code directly in browser.
     -   Reference [idomatic.js](https://github.com/rwaldron/idiomatic.js/) for a conformed javascript style guide.
     -   Reference the [MDN Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) for Javascript documentation
--                       Datatypes
+-                                       Datatypes
     -   Types of data:
         -   string
         -   number
@@ -236,5 +236,9 @@ Introduction to Javascript ES6
     -   var myVariable = "Value";
 -   Naming and Naming Conventions for Javascript Variables
     -   Use camelCase for naming variables, ex: var myName;
--   Strong Concatenation
-    -
+-   String Concatenation
+    -   Use + to concatenate values into a combined string.
+-   Slicing and Extracting Parts of a String
+    -   Use function stringVal.slice(x, y); where x = from-index and y = to-index.
+-   Challenge: Changing Case in Text
+    -   Use function stringVal.toUpperCase()
