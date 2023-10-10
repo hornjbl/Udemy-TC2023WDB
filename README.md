@@ -207,6 +207,15 @@ Bootstrap - TODO
 
 Web Design School - Create a Website That People Will Love - TODO
 
+-   Introduction to Web Design
+-   Understanding Colour Theory
+    -   colorhunt.co
+    -   Adobe Color
+-   Understanding Typography and How to Choose a Font
+-   Managing ATTENTION with effective User Interface (UI)
+-   User Experience (UX) Design
+-   Web Design in Practice - Let's apply what we've learnt
+
 ### Section 13
 
 Capstone Project 2 - Personal Side - TODO
@@ -222,7 +231,7 @@ Introduction to Javascript ES6
     -   Using Developer Tools -> Sources -> Snippets to run Javascript code directly in browser.
     -   Reference [idomatic.js](https://github.com/rwaldron/idiomatic.js/) for a conformed javascript style guide.
     -   Reference the [MDN Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) for Javascript documentation
--                                       Datatypes
+-   Datatypes
     -   Types of data:
         -   string
         -   number
@@ -242,3 +251,10 @@ Introduction to Javascript ES6
     -   Use function stringVal.slice(x, y); where x = from-index and y = to-index.
 -   Challenge: Changing Case in Text
     -   Use function stringVal.toUpperCase()
+
+### Section 15
+
+Intermediate Javascript
+
+-   Random Number Generation in Javascript: Building a Love Calculator
+    -   var n = Math.random();
