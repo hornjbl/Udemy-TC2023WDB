@@ -127,3 +127,24 @@ footer {
     border-radius: 25px;
     padding: 0.25em;
 }
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .dice img {
+        /* outline: 2px solid red; */
+        /* height: 150px; */
+        width: 150px;
+        padding: 0.25em;
+    }
+
+    .button-play {
+        font-size: 1.5rem;
+    }
+}
