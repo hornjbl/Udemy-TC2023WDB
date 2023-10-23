@@ -1,0 +1,2 @@
+-	Popular to use Google's CDN (Content Delivery Network)
+-	If you use a popular CDN like Google's, the user might very well already have it in cache and a new copy won't have to be loaded.
