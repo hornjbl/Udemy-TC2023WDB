@@ -2,7 +2,7 @@ function handleClick() {
     alert("Click!");
 }
 
-const allButtons = document.getElementsByTagName("button");
+const allButtons = document.getElementsByClassName("drum");
 
 // const elArray = Array.from(allButtons);
 
@@ -11,5 +11,15 @@ const allButtons = document.getElementsByTagName("button");
 // });
 
 for (let i = 0; i < allButtons.length; i++) {
-    allButtons[i].addEventListener("dblclick", handleClick);
+	// allButtons[i].addEventListener("click", handleClick);
+	
+	// allButtons[i].addEventListener("click", function() {
+		// 	alert("I got clicked!");
+		// })
+		
+		allButtons[i].addEventListener("click", function () {
+			const audioDrum = new Audio(`./sounds/drum-${this.classList[0]}.mp3`);
+
+			audioDrum.play();
+    });	
 }
