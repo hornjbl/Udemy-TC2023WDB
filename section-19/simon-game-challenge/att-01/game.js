@@ -21,13 +21,14 @@ function nextSequence() {
 $(".btn").click((usrEvent) => {
     const userChosenColor = usrEvent.target.id;
     userClickedPattern.push(userChosenColor);
+	playSound(userChosenColor);
     $("#level-text").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
 	// console.log(userClickedPattern);
     // console.log(gamePattern);
-    playSound(userChosenColor);
 
     // The user has made the right mount of clicks
     if (gamePattern.slice(0, userClickedPattern.length).toString() != userClickedPattern.toString()) {
+		playSound("wrong");
         console.log("You lose!");
 		$("#level-title").text("You lose!");
 		$("#level-text").text("Press <space> to try again")
