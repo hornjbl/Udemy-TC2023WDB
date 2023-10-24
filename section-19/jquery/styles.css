@@ -38,5 +38,15 @@ p, h1, h2, h3, h4, h5, h6 {
 /* ====================================================================== */
 
 body {
-	background-color: red;
+	text-align: center;
+}
+
+.big-title {
+	font-size: 10rem;
+	color: yellow;
+	font-family: cursive;
+}
+
+.margin-50 {
+	margin: 100px;
 }
