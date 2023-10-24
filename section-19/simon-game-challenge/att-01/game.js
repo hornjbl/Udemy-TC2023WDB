@@ -14,7 +14,7 @@ function nextSequence() {
     let randomChosenColor = buttonColors[Math.floor(Math.random() * 4)];
     playSound(randomChosenColor);
     gamePattern.push(randomChosenColor);
-    $("#level-text").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
+    $("#level-title").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
 }
 // $(`#${randomChosenColor}`).fadeOut(20).fadeIn(20).fadeOut(20).fadeIn(20).fadeOut(20).fadeIn(20);
 
@@ -22,7 +22,7 @@ function handleEvent(color) {
     const userChosenColor = color;
     userClickedPattern.push(userChosenColor);
     playSound(userChosenColor);
-    $("#level-text").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
+    $("#level-title").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
     // console.log(userClickedPattern);
     // console.log(gamePattern);
 
@@ -31,7 +31,6 @@ function handleEvent(color) {
         playSound("wrong");
         console.log("You lose!");
         $("#level-title").text("You lose!");
-        $("#level-text").text("Press <space> to try again");
         $(".btn").attr("disabled", true);
     } else if (gamePattern.length == userClickedPattern.length) {
         console.log(`Clicked: ${userClickedPattern}`);
@@ -44,10 +43,9 @@ function handleEvent(color) {
     }
 }
 
-$("#level-text").on("tap", () => {
+$("#play").click(() => {
     console.clear();
-    $("#level-title").text("GO!");
-    $("#level-text").text(`0\\1`);
+    $("#level-title").text(`0\\1`);
     $(".btn").attr("disabled", false);
     userClickedPattern = [];
     gamePattern = [];
@@ -62,8 +60,7 @@ $(document).keydown((keyEvent) => {
     switch (keyEvent.key) {
         case " ":
             console.clear();
-            $("#level-title").text("GO!");
-            $("#level-text").text(`0\\1`);
+            $("#level-title").text(`0\\1`);
             $(".btn").attr("disabled", false);
             userClickedPattern = [];
             gamePattern = [];
