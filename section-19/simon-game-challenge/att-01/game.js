@@ -44,7 +44,7 @@ function handleEvent(color) {
     }
 }
 
-$("#level-text").click(() => {
+$("#level-text").on("tap", () => {
     console.clear();
     $("#level-title").text("GO!");
     $("#level-text").text(`0\\1`);
