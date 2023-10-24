@@ -1,6 +1,49 @@
+/* ====================================================================== */
+/* STANDARD CSS RESET START */
+/* ====================================================================== */
+*, *::before, *::after {
+	/* 1. Use a more-intuitive box-sizing model */
+	box-sizing: border-box;
+}
+* {
+	/* 2. Remove default margin */
+	margin: 0;
+}
+/* Typographic tweaks! */
 body {
-    text-align: center;
+	/* 3. Add accessible line-height */
+	/* 4. Improve text rendering */
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+	/* 5. Improve media defaults */
+	display: block;
+	max-width: 100%;
+}
+input, button, textarea, select {
+	/* 6. Remove built-in form typography styles */
+	font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+	/* 7. Avoid text overflows */
+	overflow-wrap: break-word;
+}
+#root, #__next {
+	/* 8. Create a root stacking context */
+	isolation: isolate;
+}
+/* ====================================================================== */
+/* STANDARD CSS RESET END */
+/* ====================================================================== */
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
     background-color: #011f3f;
+	font-family: "Press Start 2P", cursive;
 }
 
 #level-title, #level-text {
@@ -11,6 +54,7 @@ body {
 }
 
 .container {
+	text-align: center;
     display: block;
     width: 50%;
 	max-width: 500px;
@@ -64,5 +108,5 @@ body {
     border: 10px solid black;
     border-radius: 10px;	
 	padding: 15px;
-	font-size: 4rem;
+	/* font-size: 3em; */
 }
