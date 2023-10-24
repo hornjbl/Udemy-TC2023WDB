@@ -14,47 +14,76 @@ function nextSequence() {
     let randomChosenColor = buttonColors[Math.floor(Math.random() * 4)];
     playSound(randomChosenColor);
     gamePattern.push(randomChosenColor);
-	$("#level-text").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
+    $("#level-text").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
 }
 // $(`#${randomChosenColor}`).fadeOut(20).fadeIn(20).fadeOut(20).fadeIn(20).fadeOut(20).fadeIn(20);
 
-$(".btn").click((usrEvent) => {
-    const userChosenColor = usrEvent.target.id;
+function handleEvent(color) {
+    const userChosenColor = color;
     userClickedPattern.push(userChosenColor);
-	playSound(userChosenColor);
+    playSound(userChosenColor);
     $("#level-text").text(`${userClickedPattern.length} \\ ${gamePattern.length}`);
-	// console.log(userClickedPattern);
+    // console.log(userClickedPattern);
     // console.log(gamePattern);
 
     // The user has made the right mount of clicks
     if (gamePattern.slice(0, userClickedPattern.length).toString() != userClickedPattern.toString()) {
-		playSound("wrong");
+        playSound("wrong");
         console.log("You lose!");
-		$("#level-title").text("You lose!");
-		$("#level-text").text("Press <space> to try again")
-		$(".btn").attr("disabled", true);
+        $("#level-title").text("You lose!");
+        $("#level-text").text("Press <space> to try again");
+        $(".btn").attr("disabled", true);
     } else if (gamePattern.length == userClickedPattern.length) {
-		console.log(`Clicked: ${userClickedPattern}`);
+        console.log(`Clicked: ${userClickedPattern}`);
         console.log(`Game: ${gamePattern}`);
-		userClickedPattern = [];
+        userClickedPattern = [];
         setTimeout(nextSequence, 1000);
-	
     } else {
-		console.log(`Clicked: ${userClickedPattern}`);
+        console.log(`Clicked: ${userClickedPattern}`);
         console.log(`Game: ${gamePattern}`);
     }
+}
+
+$(".btn").click((usrEvent) => {
+    handleEvent(usrEvent.target.id);
 });
 
 $(document).keydown((keyEvent) => {
-    if (keyEvent.key == " ") {
-		console.clear();
-		$("#level-title").text("GO!");
-		$("#level-text").text(`0\\1`);
-		$(".btn").attr("disabled", false);
-        userClickedPattern = [];
-        gamePattern = [];
-        nextSequence();
+    switch (keyEvent.key) {
+        case " ":
+            console.clear();
+            $("#level-title").text("GO!");
+            $("#level-text").text(`0\\1`);
+            $(".btn").attr("disabled", false);
+            userClickedPattern = [];
+            gamePattern = [];
+            nextSequence();
+            break;
+        case "4":
+            if ($(".btn").attr("disabled") != "disabled") {
+                handleEvent("green");
+            }
+            break;
+        case "5":
+            if ($(".btn").attr("disabled") != "disabled") {
+                handleEvent("red");
+            }
+            break;
+        case "1":
+            if ($(".btn").attr("disabled") != "disabled") {
+                handleEvent("yellow");
+            }
+            break;
+        case "2":
+            if ($(".btn").attr("disabled") != "disabled") {
+                handleEvent("blue");
+            }
+            break;
+        default:
+            break;
     }
 });
 
-$(".btn").attr("disabled", true); 
+$(".btn").attr("disabled", true);
+
+$(selector).attr(attributeName);
