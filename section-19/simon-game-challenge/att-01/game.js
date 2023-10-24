@@ -44,6 +44,16 @@ function handleEvent(color) {
     }
 }
 
+$("#level-text").click(() => {
+    console.clear();
+    $("#level-title").text("GO!");
+    $("#level-text").text(`0\\1`);
+    $(".btn").attr("disabled", false);
+    userClickedPattern = [];
+    gamePattern = [];
+    nextSequence();
+});
+
 $(".btn").click((usrEvent) => {
     handleEvent(usrEvent.target.id);
 });
@@ -85,5 +95,3 @@ $(document).keydown((keyEvent) => {
 });
 
 $(".btn").attr("disabled", true);
-
-$(selector).attr(attributeName);
