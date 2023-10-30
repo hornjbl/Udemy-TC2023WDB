@@ -15,3 +15,6 @@
 -	197. How to Use the Native Node Modules
 	-	File system Module - allows us to access the local file system.
 	-	Use it by "importing" or "requiring".
+- 	198. Enable the use of Ecam Script:
+	-	Add the "type" property in the package.json file.
+	-	`"type": "module", `
